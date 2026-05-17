@@ -62,18 +62,26 @@ header {
     border-radius: 1rem;
     border: 1px solid gold;
     padding: 1rem;
+
+}
+
+.header-nav a:hover {
+    transform: scale(1.1);
 }
 
 .fa-facebook {
     color: blue;
+    transition: transform 0.3s ease;
 }
 
 .fa-instagram {
     color: purple;
+    transition: transform 0.3s ease;
 }
 
 .fa-whatsapp {
     color: green;
+    transition: transform 0.3s ease;
 }
 
 .header-contact {
