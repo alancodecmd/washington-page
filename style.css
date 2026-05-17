@@ -43,6 +43,18 @@ header {
     padding: 1rem;
 }
 
+.fa-facebook {
+    color: blue;
+}
+
+.fa-instagram {
+    color: purple;
+}
+
+.fa-whatsapp {
+    color: green;
+}
+
 .header-contact {
     margin: 0;
 }
