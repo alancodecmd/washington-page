@@ -121,7 +121,7 @@ main {
     margin: 0;
     padding: 0;
     font-size: 24px;
-    color: rgb(58, 68, 78);
+    color: rgb(0, 0, 0);
 }
 
 .p2-intro-content {
@@ -129,7 +129,7 @@ main {
     margin: 0;
     padding-top: 1rem;
     font-size: 20px;
-    color: rgb(58, 68, 78);
+    color: rgb(0, 0, 0);
     text-align: center
 }
 
@@ -168,8 +168,8 @@ iframe {
 .p-separator {
     font-weight: bold;
     font-size: 20px;
-    color: rgb(40, 47, 54);
-    box-shadow: 15px 15px 1px rgb(255, 179, 0);
+    color: rgb(0, 0, 0);
+    box-shadow: 15px 15px 1px orange;
     padding: 1rem;
     border-radius: 1rem;
     border: 1px solid gold;
@@ -202,7 +202,7 @@ iframe {
 
 /* footer */
 footer {
-    background-color: lightyellow;
+    background-color: seashell;
     text-align: center;
     border-top: 1px solid black;
 }
@@ -211,7 +211,26 @@ footer {
     margin: 0;
     padding: 1rem;
     font-size: 1rem;
-    color: rgb(58, 68, 78);
+    color: gray;
+}
+
+/* contact */
+
+.contact {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    background: linear-gradient(135deg, white, gold);
+    border-top: 2px solid gold;
+}
+
+.contact p {
+    font-size: 1.5rem;
+    color: black;
+    text-align: center;
+    font-weight: bold;
 }
 /* cellphone */
 
