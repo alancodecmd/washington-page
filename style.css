@@ -1,5 +1,4 @@
 body {
-    background: white;
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -7,7 +6,6 @@ body {
 /* header */
 
 .header-container {
-    background: linear-gradient(180deg, white, #fffaf0);
     border-bottom: 3px solid gold;
 }
 
@@ -41,6 +39,7 @@ header {
     gap: 1rem;
     background: seashell;
     border-radius: 1rem;
+    border: 1px solid gold;
     padding: 1rem;
 }
 
@@ -119,6 +118,7 @@ iframe {
     border: 1px solid gold;
     transform: rotate(-2deg);
     margin-top: 1rem;
+    background-color: seashell;
 }
 
 /* services */
