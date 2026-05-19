@@ -178,6 +178,7 @@ iframe {
     transform: rotate(-2deg);
     margin-top: 1rem;
     background-color: seashell;
+    will-change: transform;
 }
 
 .services-offered {
