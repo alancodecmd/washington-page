@@ -37,7 +37,18 @@ body {
     color: white;
     font-size: 1.1rem;
     text-align: center;
-    animation: fadeinleft 1s ease-out;
+    animation: fadeInLeft 2s ease forwards;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-1%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 /* header */
