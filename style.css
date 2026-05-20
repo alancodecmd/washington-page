@@ -29,6 +29,7 @@ body {
     width: 100%;
     top: 0;
     background-color: gold;
+    z-index: 1000;
 }
 
 .p-offers-content {
@@ -167,15 +168,6 @@ main {
     font-size: 24px;
     color: rgb(0, 0, 0);
     animation: fadeInLeft 1s ease forwards;
-
-}
-
-.p-intro-content {
-    margin: 0;
-    padding: 0;
-    font-size: 24px;
-    color: rgb(0, 0, 0);
-    animation: fadeInLeft 2s ease forwards;
 }
 
 .p2-intro-content {
@@ -194,7 +186,6 @@ main {
     color: rgb(0, 0, 0);
     text-align: center;
     animation: fadeInLeft 18s ease forwards;
-
 }
 
 .intro-media {
