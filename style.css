@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .whatsapp-button {
@@ -96,7 +96,7 @@ header {
 .header-nav {
     display: flex;
     font-size: 1.2rem;
-    font-weight: bold;
+    font-weight: 600;
     align-items: center;
     gap: 1rem;
     background: seashell;
@@ -136,16 +136,12 @@ header {
 
 /* main */
 
-.main-container {
-
-}
-
 main {
     display: flex;
     flex-direction: column;
     max-width: 1600px;
     margin: auto;
-    padding: 1rem 3rem;
+    padding: 3rem 3rem;
 }
 
 .intro {
@@ -165,7 +161,7 @@ main {
 .p-intro-content {
     margin: 0;
     padding: 0;
-    font-size: 24px;
+    font-size: 32px;
     color: rgb(0, 0, 0);
     animation: fadeInLeft 1s ease forwards;
 }
@@ -173,7 +169,7 @@ main {
 .p2-intro-content {
     margin: 0;
     padding: 0;
-    font-size: 24px;
+    font-size: 18px;
     color: rgb(0, 0, 0);
     animation: fadeInLeft 10s ease forwards;
 }
@@ -203,26 +199,29 @@ iframe {
 
 /* testimonials*/
 
+.testimonials {
+    margin: 0;
+}
+
 .testimonials-content {
     display: flex;
     flex-direction: column;
     margin: auto;
     align-items: center;
     overflow: hidden;
-    max-width: 1600px;
-    padding: 0 3rem;
+    padding: 1rem 3rem;
+    gap: 2rem;
 }
 
 .testimonials-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
-    color: black;
+    color: rgb(50, 50, 50);
     margin: 0;
 }
 
 .carousel {
     display: flex;
-    overflow: hidden;
     flex: 1;
     max-width: 100%
 }
@@ -232,19 +231,18 @@ iframe {
     animation: carousel 60s linear infinite;
 }
 
-.card {
+.card p {
     min-width: max-content;
     padding-right: 2rem;
+    font-size: large;
+    margin: 0;
+    color: rgb(160, 160, 160);
 }
 
 @keyframes carousel {
     from {translate: 0;}
     to {translate: -100%;}
 }
-
-.carousel:hover .testimonials-cards {
-    animation-play-state: paused;
-}   
 
 /* services */
 
@@ -259,7 +257,6 @@ iframe {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    padding: 1rem;
 }
 
 .p-separator {
