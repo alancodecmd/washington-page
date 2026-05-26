@@ -13,6 +13,7 @@ body {
     padding: 5px 20px;
     box-shadow: 2px 5px 25px rgba(0, 0, 0, 0.305);
     transition: transform 0.3s ease;
+    z-index: 999;
 }
 
 .whatsapp-button img {
@@ -35,10 +36,10 @@ body {
 .p-offers-content {
     margin: 0;
     padding: 1rem;
-    color: black;
     font-size: 1.1rem;
     text-align: center;
     animation: breath 2s ease-in-out infinite;
+    color: #340B16;
 }
 
 @keyframes breath {
@@ -67,7 +68,7 @@ body {
 /* header */
 
 .header-container {
-    border-bottom: 2px solid rgb(88, 88, 88);
+    border-bottom: 3px solid #1C7BA3;
     margin-top: 3.5rem;
 }
 
@@ -91,20 +92,16 @@ header {
 
 .academy-title {
     margin: 0;
-    color: #333;
+    color: #340B16;
 }
 
 .header-nav {
     display: flex;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     align-items: center;
     gap: 1rem;
-    background: seashell;
-    border-radius: 1rem;
-    border: 1px solid gold;
-    padding: 1rem;
-    color: #585858;
+    color: #340B16;
 }
 
 .header-nav a:hover {
@@ -163,16 +160,16 @@ main {
     margin: 0;
     padding: 0;
     font-size: 32px;
-    color: #333;
+    color: #3F8EBF;
     animation: fadeInLeft 1s ease forwards;
 }
 
 .p2-intro-content {
     margin: 0;
     padding: 0;
-    font-size: 18px;
-    color: #585858;
-    animation: fadeInLeft 10s ease forwards;
+    font-size: 20px;
+    color: #6a6a6a;
+    animation: fadeInLeft 3s ease forwards;
 }
 
 .p3-intro-content {
@@ -180,9 +177,9 @@ main {
     margin: 0;
     padding-top: 1rem;
     font-size: 20px;
-    color: #585858;
+    color: #A59FFF;
     text-align: center;
-    animation: fadeInLeft 18s ease forwards;
+    animation: fadeInLeft 6s ease forwards;
 }
 
 .intro-media {
@@ -219,6 +216,9 @@ iframe {
     font-weight: bold;
     color: #333;
     margin: 0;
+    border-bottom: 2px solid gold;
+    padding-bottom: 1rem;
+    border-radius: 25px;
 }
 
 .carousel {
@@ -237,7 +237,8 @@ iframe {
     padding-right: 2rem;
     font-size: 1.4rem;
     margin: 0;
-    color: #787878;
+    color: #33312C;
+    font-weight: bold;
 }
 
 @keyframes carousel {
@@ -248,7 +249,7 @@ iframe {
 /* services */
 
 .services {
-    background: #f6f6f6;
+    background: #ffffff;
 }
 
 .services-content {
@@ -263,22 +264,22 @@ iframe {
     font-weight: bold;
     font-size: 28px;
     color: #333;
-    padding: 2rem 3rem;
+    padding: 1rem 1rem;
     border-radius: 1rem;
     margin: 0;
+    border-bottom: 2px solid gold;
 }
 
 /* services card slider */
 
 .slide-container {
-    max-width: 800px;
+    max-width: 1200px;
     width: 100%;
-    padding: 40px;
     padding-top: 0px;
 }
 
 .slide-content {
-    margin: 0 40px;
+    margin: 0 20px;
     border-radius: 25px;
     overflow: hidden;
 }
@@ -291,7 +292,7 @@ iframe {
 .image-content,
 .card-content {
     display: flex;
-        flex-direction: column;
+    flex-direction: column;
     padding: 10px 14px;
     align-items: center;
 }
@@ -304,7 +305,7 @@ iframe {
 
 .overlay {
     position: absolute; /* looks for an ancestor with a positioning context */
-    background-color: #444444;
+    background-color: #ffffff;
     width: 100%;
     height: 100%;
     top: 0;
@@ -314,9 +315,8 @@ iframe {
 
 .overlay::before,
 .overlay::after {
-    content: '';
     position: absolute;
-    background-color: #444444;
+    background-color: rgb(255, 255, 255);
     width: 40px;
     height: 40px;
     right: 0;
@@ -330,8 +330,8 @@ iframe {
 
 .card-image {
     position: relative;
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
 }
 
@@ -343,36 +343,46 @@ iframe {
 }
 
 .name {
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 24px;
+    font-weight: bold;
     color: #333;
+    padding: 0;
+    margin: 0;
 }
 
 .description {
-    font-size: 14px;
-    color: #707070;
-    text-align: center;
+    font-size: 18px;
+    color: #333333;
+    border-top: 1px solid gold;
+    border-radius: 25px;
+    padding: 1rem;
 }
 
 .button {
     border: none;
     font-size: 16px;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 8px 16px;
-    background-color: rgb(74, 161, 255);
+    background-color: rgb(0, 0, 0);
     border-radius: 6px;
     margin: 14px;
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
+.button a {
+    text-decoration: none;
+    color: white;
+}
+
 .button:hover {
-    background: rgb(19, 98, 255);
+    background: gold;
 }
 
 .swiper-navBtn {
     color: black;
     transition: color 0.3s ease;
+    height: 20px;
 }
 
 .swiper-navBtn:hover {
@@ -408,7 +418,8 @@ iframe {
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    background: seashell;
+    background: linear-gradient(gold);
+    border-top: solid 1px gold;
 }
 
 .contact p {
@@ -420,7 +431,7 @@ iframe {
 
 /* footer */
 footer {
-    background-color: lightgray;
+    background-color: rgb(236, 236, 236);
     text-align: center;
     border-top: 1px solid black;
 }
