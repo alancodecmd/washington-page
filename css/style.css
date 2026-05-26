@@ -257,7 +257,6 @@ iframe {
     margin: auto;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
 }
 
 .p-separator {
@@ -272,27 +271,27 @@ iframe {
 /* services card slider */
 
 .slide-container {
-    max-width: 1120px;
+    max-width: 800px;
     width: 100%;
     padding: 40px;
+    padding-top: 0px;
 }
 
 .slide-content {
     margin: 0 40px;
-    overflow: hidden;
     border-radius: 25px;
+    overflow: hidden;
 }
 
 .card {
     border-radius: 25px;
-    background-color: #ffffff;
-    width: 320px;
+    background-color: #ffffff;  
 }
 
 .image-content,
 .card-content {
     display: flex;
-    flex-direction: column;
+        flex-direction: column;
     padding: 10px 14px;
     align-items: center;
 }
@@ -305,7 +304,7 @@ iframe {
 
 .overlay {
     position: absolute; /* looks for an ancestor with a positioning context */
-    background-color: #0077b5;
+    background-color: #444444;
     width: 100%;
     height: 100%;
     top: 0;
@@ -317,7 +316,7 @@ iframe {
 .overlay::after {
     content: '';
     position: absolute;
-    background-color: #0077b5;
+    background-color: #444444;
     width: 40px;
     height: 40px;
     right: 0;
