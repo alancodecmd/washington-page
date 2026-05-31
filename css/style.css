@@ -33,6 +33,10 @@ body {
     z-index: 1000;
 }
 
+.small-screen-offer {
+    display: none;
+}
+
 .p-offers-content {
     margin: 0;
     padding: 1rem;
@@ -95,8 +99,15 @@ header {
     color: #340B16;
 }
 
+.small-screen-title {
+    display: none;
+}
+
+
+
 .header-nav {
     display: flex;
+    flex-direction: row;
     font-size: 1.5rem;
     font-weight: 600;
     align-items: center;
@@ -139,7 +150,7 @@ main {
     flex-direction: column;
     max-width: 1600px;
     margin: auto;
-    padding: 3rem 3rem;
+    padding: 3rem;
 }
 
 .intro {
@@ -219,6 +230,10 @@ iframe {
     border-bottom: 2px solid gold;
     padding-bottom: 1rem;
     border-radius: 25px;
+}
+
+.small-screen-testimonials {
+    display: none;
 }
 
 .carousel {
@@ -418,9 +433,9 @@ iframe {
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    background: linear-gradient(gold);
     border-top: solid 1px gold;
     margin-top: 2rem;
+    background-color: gold;
 }
 
 .contact p {
@@ -444,9 +459,62 @@ footer {
     color: gray;
 }
 
-/* Ipad */
+/* Tablets and cellphones */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
+    .big-screen-offer {
+        display: none;
+    }
+
+    .small-screen-offer {
+        display: inline;
+    }
+
+    main {
+        padding: 0px 0px 1rem 0px;
+    }
+
+    header {
+        padding: 1rem 0px 1rem 0px;
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+
+    .small-screen-logo {
+        display: inline;
+    }
+
+    .intro {
+        padding: 0;
+        flex-direction: column;
+        margin: auto;
+        align-items: normal;
+        gap: 1rem;
+    }
+
+    .long-title {
+        display: none;
+    }
+
+    .small-screen-title {
+        display: inline;
+    }
+
+    .header-contact {
+        display: none;
+    }
+    .p-intro-content {
+        text-align: center;
+    }
+
+    .p2-intro-content {
+        display: none;
+    }
+
+    .testimonials-title {
+        text-align: center;
+    }
+
     .slide-content {
         margin: 0 10px;
     }
@@ -454,14 +522,18 @@ footer {
         display: none;
     }
 
-    nav {
-        display: flex;
-        flex-direction: column;
+    .big-screen-contact {
+        display: none;
     }
-    header {
-        padding: 0px 0px 0px 1rem;
+}
+
+@media screen and (max-width: 320px) {
+    .big-screen-testimonials {
+        display: none;
     }
-    .intro {
-        padding: 0;
+    .small-screen-testimonials {
+        display: inline;
     }
+
+    
 }
