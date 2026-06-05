@@ -212,7 +212,7 @@ iframe {
 /* testimonials*/
 
 .testimonials {
-    margin: 0;
+    margin: 0px;
 }
 
 .testimonials-content {
@@ -221,7 +221,7 @@ iframe {
     margin: auto;
     align-items: center;
     overflow: hidden;
-    padding: 1rem 3rem;
+    padding: 2rem 0rem;
     gap: 2rem;
 }
 
@@ -247,17 +247,22 @@ iframe {
 
 .testimonials-cards {
     display: flex;
-    /*animation: carousel 30s linear infinite;*/
+    flex-direction: row;
+    animation: carousel 50s linear infinite;
+    max-width: 4660px;
 }
 
 .card-box {
+    background-color: #f3f3f3;
     border-radius: 25px;
-    background-color: #f4f4f4;
-    margin: 0 1rem;
+    margin: 0px 2rem 0px 0px;
     padding: 1rem;
     min-width: max-content;
     border: 1px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card-text p {
@@ -307,7 +312,7 @@ iframe {
     }
 
     to {
-        translate: -100%;
+        translate: -50%;
     }
 }
 
