@@ -1,28 +1,66 @@
+:root {
+    --gold: gold;
+    --bg-light: #f3f3f3;
+    --bg-white: #ffffff;
+}
+
+ * {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: 'Plus Jakarta Sans', sans-serif;
+    background: var(--bg-light);
 }
 
 .whatsapp-button {
     display: flex;
     position: fixed;
+    align-items: center;
+    justify-content: center;
     bottom: 20px;
     right: 20px;
-    background-color: gold;
-    border-radius: 25px;
+    background-color: #25D366;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
     padding: 5px 20px;
-    box-shadow: 2px 5px 25px rgba(0, 0, 0, 0.305);
-    transition: transform 0.3s ease;
+    box-shadow: 0px 8px 24px rgba(47, 168, 29, 0.305);
+    transition: all 0.3s ease;
     z-index: 999;
 }
 
 .whatsapp-button img {
-    width: 50px;
-    height: 50px;
+    width: 32px;
+    height: 32px;
 }
 
 .whatsapp-button:hover {
-    transform: scale(1.1);
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 0px 8px 32px rgba(50, 180, 30, 0.305)
+}
+
+.whatsapp-button::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #25D366;
+    animation: pulse 2s infinite;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+@keyframes pulse {
+    0% {transform: scale(1);
+    opacity: 0.5;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
 }
 
 .offers {
