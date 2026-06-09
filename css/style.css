@@ -1,5 +1,5 @@
 :root {
-    --gold: gold;
+    --bg-gold: rgb(231, 200, 0);
     --bg-light: #f3f3f3;
     --bg-white: #ffffff;
 }
@@ -11,7 +11,7 @@
 body {
     margin: 0;
     font-family: 'Plus Jakarta Sans', sans-serif;
-    background: var(--bg-light);
+    background: var(--bg-white);
 }
 
 .whatsapp-button {
@@ -67,7 +67,7 @@ body {
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: gold;
+    background-color: var(--bg-gold);
     z-index: 1000;
 }
 
@@ -77,11 +77,12 @@ body {
 
 .p-offers-content {
     margin: 0;
-    padding: 1rem;
-    font-size: 1.1rem;
+    padding: 0.8rem;
+    font-size: 1rem;
     text-align: center;
     animation: breath 2s ease-in-out infinite;
     color: #000000;
+    font-weight: bold;
 }
 
 @keyframes breath {
@@ -113,8 +114,8 @@ body {
 /* header */
 
 .header-container {
-    border-bottom: 3px solid gold;
-    margin-top: 3.5rem;
+    margin-top: 3rem;
+    border-bottom: 1px solid var(--bg-gold);
 }
 
 header {
@@ -122,22 +123,25 @@ header {
     align-items: center;
     padding: 1rem 3rem;
     justify-content: space-between;
-    max-width: 1600px;
+    max-width: 1400px;
     margin: auto;
 }
 
 .header-brand {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
+    align-items: center;
 }
 
 .logo {
-    max-width: 25px;
+    width: 45px;
+    height: 45px;
 }
 
 .academy-title {
     margin: 0;
     color: #340B16;
+    font-size: 24px;
 }
 
 .small-screen-title {
@@ -149,7 +153,7 @@ header {
 .header-nav {
     display: flex;
     flex-direction: row;
-    font-size: 1.5rem;
+    font-size: 20px;
     font-weight: 600;
     align-items: center;
     gap: 1rem;
@@ -186,10 +190,14 @@ header {
 
 /* main */
 
+.main-container {
+    background-color: rgb(255, 249, 244);
+}
+
 main {
     display: flex;
     flex-direction: column;
-    max-width: 1600px;
+    max-width: 1400px;
     margin: auto;
     padding: 3rem;
 }
@@ -225,7 +233,7 @@ main {
 }
 
 .p3-intro-content {
-    border-top: 1px solid gold;
+    border-top: 1px solid var(--bg-gold);
     margin: 0;
     padding-top: 1rem;
     font-size: 20px;
@@ -268,7 +276,7 @@ iframe {
     font-weight: bold;
     color: #333;
     margin: 0;
-    border-bottom: 2px solid gold;
+    border-bottom: 2px solid var(--bg-gold);
     padding-bottom: 1rem;
     border-radius: 25px;
 }
@@ -362,7 +370,7 @@ iframe {
 
 .services-content {
     display: flex;
-    max-width: 1600px;
+    max-width: 1400px;
     margin: auto;
     flex-direction: column;
     align-items: center;
@@ -542,7 +550,7 @@ iframe {
 
 /* footer */
 footer {
-    background-color: rgb(236, 236, 236);
+    background-color: rgb(16, 3, 6);
     text-align: center;
     border-top: 1px solid black;
 }
