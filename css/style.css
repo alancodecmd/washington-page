@@ -1,5 +1,5 @@
 :root {
-    --bg-gold: rgb(231, 200, 0);
+    --bg-gold: gold;
     --bg-light: #f3f3f3;
     --bg-white: #ffffff;
 }
@@ -67,7 +67,7 @@ body {
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: var(--bg-gold);
+    background-color: #5B9BD5;
     z-index: 1000;
 }
 
@@ -81,7 +81,7 @@ body {
     font-size: 1rem;
     text-align: center;
     animation: breath 2s ease-in-out infinite;
-    color: #000000;
+    color: white;
     font-weight: bold;
 }
 
@@ -115,7 +115,7 @@ body {
 
 .header-container {
     margin-top: 3rem;
-    border-bottom: 1px solid var(--bg-gold);
+    border-bottom: 1px solid skyblue;
 }
 
 header {
@@ -147,8 +147,6 @@ header {
 .small-screen-title {
     display: none;
 }
-
-
 
 .header-nav {
     display: flex;
@@ -191,7 +189,7 @@ header {
 /* main */
 
 .main-container {
-    background-color: rgb(255, 249, 244);
+    background: rgba(135, 207, 235, 0.123);
 }
 
 main {
@@ -233,7 +231,7 @@ main {
 }
 
 .p3-intro-content {
-    border-top: 1px solid var(--bg-gold);
+    border-top: 1px solid skyblue;
     margin: 0;
     padding-top: 1rem;
     font-size: 20px;
@@ -274,11 +272,23 @@ iframe {
 .testimonials-title {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #333;
+    color: #333;    
     margin: 0;
-    border-bottom: 2px solid var(--bg-gold);
     padding-bottom: 1rem;
-    border-radius: 25px;
+    position: relative;
+    text-align: center;
+}
+
+.testimonials-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: black;
+    border-radius: 2px;
 }
 
 .small-screen-testimonials {
@@ -365,7 +375,7 @@ iframe {
 /* services */
 
 .services {
-    background: #ffffff;
+    background: rgba(135, 207, 235, 0.123);
 }
 
 .services-content {
@@ -402,7 +412,8 @@ iframe {
 
 .card {
     border-radius: 25px;
-    background-color: #ffffff;
+    background-color: white;
+    border: 1px solid skyblue;
 }
 
 .image-content,
@@ -535,30 +546,28 @@ iframe {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
-    border-top: solid 1px gold;
-    margin-top: 2rem;
-    background-color: gold;
+    padding: 48px 16px 48px 16px;
+    border-top: solid 1px gold; 
+    background: #5B9BD5;
 }
 
 .contact p {
-    font-size: 1.5rem;
-    color: black;
+    font-size: 26px;
+    color: white;
     text-align: center;
     font-weight: bold;
 }
 
 /* footer */
 footer {
-    background-color: rgb(16, 3, 6);
+    background-color: #1A2B4C;
     text-align: center;
-    border-top: 1px solid black;
 }
 
 .footer-text {
     margin: 0;
-    padding: 0.5rem;
-    font-size: 1rem;
+    padding: 32px;
+    font-size: 16px;
     color: gray;
 }
 
