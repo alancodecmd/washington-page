@@ -116,6 +116,7 @@ body {
 .header-container {
     margin-top: 3rem;
     border-bottom: 1px solid skyblue;
+    padding: 16px 0px 16px 0px;
 }
 
 header {
@@ -151,7 +152,7 @@ header {
 .header-nav {
     display: flex;
     flex-direction: row;
-    font-size: 20px;
+    font-size: 32px;
     font-weight: 600;
     align-items: center;
     gap: 1rem;
@@ -197,7 +198,7 @@ main {
     flex-direction: column;
     max-width: 1400px;
     margin: auto;
-    padding: 3rem;
+    padding: 80px 48px 80px 48px;
 }
 
 .intro {
@@ -256,7 +257,8 @@ iframe {
 /* testimonials*/
 
 .testimonials {
-    margin: 0px;
+    margin: 48px 0px 80px 0px;
+
 }
 
 .testimonials-content {
@@ -265,8 +267,8 @@ iframe {
     margin: auto;
     align-items: center;
     overflow: hidden;
-    padding: 2rem 0rem;
-    gap: 2rem;
+    padding: 32px 0px;
+    gap: 64px;
 }
 
 .testimonials-title {
@@ -308,32 +310,36 @@ iframe {
 }
 
 .card-box {
-    background-color: #f3f3f3;
+    background-color: white;
     border-radius: 25px;
     margin: 0px 2rem 0px 0px;
     padding: 1rem;
     min-width: max-content;
-    border: 1px solid #ddd;
+    border: 1px solid deepskyblue;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 48px;
+}
+
+.card-box:hover {
+
 }
 
 .card-text p {
     max-width: 400px;
-    font-size: 15px;
+    font-size: 16px;
     margin: 0;
     color: #000000;
 }
 
 .bottom-right-card-box {
     display: flex;
-    flex-direction: row-reverse;
     align-items: end;
-    padding: 0px;
-    justify-content: end;
+    padding-top: 32px;
     gap: 1rem;
+    border-top: solid 1px deepskyblue;
 }
 
 .student-image {
@@ -345,7 +351,6 @@ iframe {
 .student-info {
     display: flex;
     flex-direction: column;
-    align-items: end;
 }
 
 .student-name {
@@ -379,17 +384,18 @@ iframe {
 
 .services-content {
     display: flex;
-    max-width: 1400px;
     margin: auto;
     flex-direction: column;
     align-items: center;
+    padding: 80px 48px 80px 48px;
+    gap: 32px;
 }
 
 .p-separator {
     font-weight: bold;
     font-size: 28px;
     color: #333;
-    padding: 1rem 1rem;
+    padding-bottom: 16px;
     border-radius: 1rem;
     margin: 0;
     position: relative;
@@ -409,7 +415,7 @@ iframe {
 /* services card slider */
 
 .slide-container {
-    max-width: 1200px;
+    max-width: 1400px;
     width: 100%;
     padding-top: 0px;
 }
