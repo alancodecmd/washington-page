@@ -116,7 +116,7 @@ body {
 .header-container {
     margin-top: 3rem;
     border-bottom: 1px solid skyblue;
-    padding: 16px 0px 16px 0px;
+    padding: 0px;
 }
 
 header {
@@ -135,8 +135,8 @@ header {
 }
 
 .logo {
-    width: 45px;
-    height: 45px;
+    width: 90px;
+    height: 90px;
 }
 
 .academy-title {
@@ -323,13 +323,9 @@ iframe {
     gap: 48px;
 }
 
-.card-box:hover {
-
-}
-
 .card-text p {
     max-width: 400px;
-    font-size: 16px;
+    font-size: 18px;
     margin: 0;
     color: #000000;
 }
@@ -387,7 +383,7 @@ iframe {
     margin: auto;
     flex-direction: column;
     align-items: center;
-    padding: 80px 48px 80px 48px;
+    padding: 80px 0px 80px 0px;
     gap: 32px;
 }
 
@@ -399,6 +395,7 @@ iframe {
     border-radius: 1rem;
     margin: 0;
     position: relative;
+    text-align: center;
 }
 
 .p-separator::after {
@@ -508,7 +505,7 @@ iframe {
     font-size: 16px;
     color: rgb(255, 255, 255);
     padding: 8px 16px;
-    background-color: rgb(0, 0, 0);
+    background-color: deepskyblue;
     border-radius: 6px;
     margin: 14px;
     cursor: pointer;
@@ -518,6 +515,7 @@ iframe {
 .button a {
     text-decoration: none;
     color: white;
+    font-weight: bold;
 }
 
 .button:hover {
@@ -525,30 +523,22 @@ iframe {
 }
 
 .swiper-navBtn {
-    color: black;
+    color: deepskyblue;
     transition: color 0.3s ease;
     height: 20px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: auto;
 }
 
 .swiper-navBtn:hover {
     color: gold;
 }
 
-.swiper-navBtn::before,
-.swiper-navBtn::after {
-    font-size: 40px;
-}
-
-.swiper-button-next {
-    right: 0;
-}
-
-.swiper-button-left {
-    left: 0;
-}
-
 .swiper-pagination-bullet {
-    background-color: black;
+    background-color: deepskyblue;
     opacity: 1;
 }
 
