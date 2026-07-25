@@ -11,7 +11,6 @@
 body {
     margin: 0;
     font-family: 'Plus Jakarta Sans', sans-serif;
-    background: var(--bg-white);
 }
 
 .whatsapp-button {
@@ -148,12 +147,10 @@ header {
     display: none;
 }
 
-
-
 .header-nav {
     display: flex;
     flex-direction: row;
-    font-size: 20px;
+    font-size: 32px;
     font-weight: 600;
     align-items: center;
     gap: 1rem;
@@ -190,16 +187,12 @@ header {
 
 /* main */
 
-.main-container {
-    background-color: rgb(255, 249, 244);
-}
-
 main {
     display: flex;
     flex-direction: column;
     max-width: 1400px;
     margin: auto;
-    padding: 3rem;
+    padding: 6rem 3rem 6rem 3rem;
 }
 
 .intro {
@@ -259,6 +252,7 @@ iframe {
 
 .testimonials {
     margin: 0px;
+    padding: 0rem 0rem 3rem 0rem;
 }
 
 .testimonials-content {
@@ -268,7 +262,7 @@ iframe {
     align-items: center;
     overflow: hidden;
     padding: 2rem 0rem;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .testimonials-title {
@@ -299,11 +293,12 @@ iframe {
 }
 
 .card-box {
-    background-color: #f3f3f3;
+    background-color: #ffffff;
     border-radius: 25px;
     margin: 0px 2rem 0px 0px;
     padding: 1rem;
     min-width: max-content;
+    min-height: 200px;
     border: 1px solid #ddd;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -313,7 +308,7 @@ iframe {
 
 .card-text p {
     max-width: 400px;
-    font-size: 15px;
+    font-size: 18px;
     margin: 0;
     color: #000000;
 }
@@ -374,6 +369,8 @@ iframe {
     margin: auto;
     flex-direction: column;
     align-items: center;
+    padding: 0rem 0rem 3rem 0rem;
+    gap: 3rem;
 }
 
 .p-separator {
