@@ -285,6 +285,16 @@ iframe {
     max-width: 100%;
 }
 
+/* Pause the carousel on hover (desktop) */
+.testimonials-cards:hover {
+    animation-play-state: paused;
+}
+
+/* Pause while a card is being touched (mobile) */
+.testimonials-cards:active {
+    animation-play-state: paused;
+}
+
 .testimonials-cards {
     display: flex;
     flex-direction: row;
@@ -639,4 +649,43 @@ footer {
     }
 
 
+}
+
+/* Phones: swipeable testimonials instead of auto-scroll */
+@media screen and (max-width: 425px) {
+    .carousel {
+        width: 100%;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* Firefox */
+    }
+
+    .carousel::-webkit-scrollbar {
+        display: none; /* Chrome / Safari */
+    }
+
+    .testimonials-cards {
+        animation: none;
+        max-width: none;
+        width: max-content;
+        padding: 0 7.5vw; /* lets the first and last cards center */
+    }
+
+    /* Hide the duplicated set, only needed for the infinite loop */
+    .card-box:nth-child(n+6) {
+        display: none;
+    }
+
+    .card-box {
+        flex: 0 0 85vw;
+        min-width: 0;
+        margin: 0 1rem 0 0;
+        scroll-snap-align: center;
+    }
+
+    .card-text p {
+        max-width: none;
+        font-size: 16px;
+    }
 }
